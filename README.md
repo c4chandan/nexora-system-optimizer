@@ -1,19 +1,18 @@
 # ⚡ Nexora System Optimizer
 
-Nexora is a modular desktop application designed for system optimization, performance monitoring, and task automation. Built using Python and CustomTkinter, it demonstrates real-world software architecture with a plugin-based system and multi-task execution engine.
+A modular desktop application built with Python and CustomTkinter for system optimization, task automation, and performance monitoring.
 
 ---
 
 ## 🚀 Features
 
-- 🧹 System Cleanup (temporary files, cache)
+- 🧹 System Cleanup (Temp, Cache)
 - 🎮 Game Mode Optimization
 - 🌐 Internet Speed Test
 - 📀 Disk Usage Analyzer
-- 🧩 Plugin-Based Architecture (auto-load)
+- 🧩 Plugin-Based Architecture
 - 📊 Real-Time Task Monitoring
 - ⛔ Multi-task Execution with Cancel Support
-- 🖥️ Modern UI with task panels and logs
 
 ---
 
@@ -33,36 +32,34 @@ Nexora is a modular desktop application designed for system optimization, perfor
 ## 🎥 How It Works
 
 1. Select a tool from the sidebar  
-2. Task starts in a dedicated panel  
+2. Task runs in its own panel  
 3. Progress updates in real-time  
-4. Multiple tasks can run in parallel  
-5. Tasks can be cancelled anytime  
+4. User can cancel tasks anytime  
 
 ---
 
 ## 🧠 Architecture
 
-- Task-based execution engine  
-- Plugin system with dynamic loading  
-- Thread-safe UI updates  
+- Task-based execution system  
+- Plugin architecture (auto-load)  
 - Modular and scalable design  
+- UI and logic separation  
 
 ---
 
 ## 🔌 Plugin System
 
-Nexora supports dynamic plugins:
+Add new features easily:
 
-1. Create a Python file inside `/plugins`
+1. Create a Python file inside `plugins/`
 2. Define a `run(log, progress, cancel)` function
-3. It will automatically appear in the UI
+3. It will automatically appear in UI
 
 ---
 
 ## 🧹 Cleanup Engine
 
-The cleanup module handles:
-
+Handles:
 - Temporary file removal  
 - Cache cleanup  
 - System optimization routines  
@@ -71,10 +68,9 @@ The cleanup module handles:
 
 ## ⚡ Challenges & Solutions
 
-- Prevented UI freezing using multithreading  
-- Designed task registry to avoid duplicate execution  
-- Implemented modal popups for controlled task handling  
-- Built plugin system for extensibility  
+- Prevented UI freezing using threading  
+- Avoided duplicate tasks using task registry  
+- Designed modal popups for safe execution  
 
 ---
 

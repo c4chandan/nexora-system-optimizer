@@ -1,0 +1,7 @@
+```gitignore id="step6git"
+__pycache__/
+*.pyc
+*.exe
+dist/
+build/
+*.spec
